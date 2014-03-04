@@ -3,7 +3,7 @@
 
 #include "BlockEntity.h"
 #include "../World.h"
-#include "../Piston.h"
+#include "BlockPiston.h"
 
 
 
@@ -34,8 +34,8 @@ public:
 	{
 		a_BlockType = m_BlockType;
 		
-		// FIXME: Do not use cPiston class for furnace placement!
-		a_BlockMeta = cPiston::RotationPitchToMetaData(a_Player->GetYaw(), 0);
+		// FIXME: Do not use cBlockPistonHandler class for furnace placement!
+		a_BlockMeta = cBlockPistonHandler::RotationPitchToMetaData(a_Player->GetYaw(), 0);
 		
 		return true;
 	}

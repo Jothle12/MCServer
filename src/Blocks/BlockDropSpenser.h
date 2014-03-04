@@ -5,7 +5,7 @@
 
 #pragma once
 
-#include "../Piston.h"
+#include "BlockPiston.h"
 
 
 
@@ -30,8 +30,8 @@ public:
 	{
 		a_BlockType = m_BlockType;
 		
-		// FIXME: Do not use cPiston class for dispenser placement!
-		a_BlockMeta = cPiston::RotationPitchToMetaData(a_Player->GetYaw(), a_Player->GetPitch());
+		// FIXME: Do not use cBlockPistonHandler class for dispenser placement!
+		a_BlockMeta = cBlockPistonHandler::RotationPitchToMetaData(a_Player->GetYaw(), a_Player->GetPitch());
 		return true;
 	}
 } ;

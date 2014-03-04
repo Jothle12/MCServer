@@ -9,7 +9,7 @@
 #include "../Entities/Pickup.h"
 #include "../Blocks/BlockTorch.h"
 #include "../Blocks/BlockDoor.h"
-#include "../Piston.h"
+#include "../Blocks/BlockPiston.h" //
 
 
 
@@ -1225,7 +1225,7 @@ bool cIncrementalRedstoneSimulator::IsPistonPowered(int a_BlockX, int a_BlockY, 
 	// Pistons cannot be powered through their front face; this function verifies that a source meets this requirement
 
 	int OldX = a_BlockX, OldY = a_BlockY, OldZ = a_BlockZ;
-	eBlockFace Face = cPiston::MetaDataToDirection(a_Meta);
+	eBlockFace Face = cBlockPistonHandler::MetaDataToDirection(a_Meta);
 
 	for (PoweredBlocksList::const_iterator itr = m_PoweredBlocks->begin(); itr != m_PoweredBlocks->end(); ++itr)
 	{

@@ -14,7 +14,7 @@
 
 
 
-
+// Moved
 /// Number of ticks that the piston extending / retracting waits before setting the block
 const int PISTON_TICK_DELAY = 1;
 
@@ -273,7 +273,7 @@ bool cPiston::CanPull(BLOCKTYPE a_BlockType, NIBBLETYPE a_BlockMeta)
 
 
 
-
+/* Already exists?
 void cPiston::AddDir(int & a_BlockX, int & a_BlockY, int & a_BlockZ, NIBBLETYPE a_PistonMeta, int a_Amount)
 {
 	switch (a_PistonMeta & 0x07)
@@ -291,7 +291,7 @@ void cPiston::AddDir(int & a_BlockX, int & a_BlockY, int & a_BlockZ, NIBBLETYPE 
 		}
 	}
 }
-
+*/ 
 
 
 

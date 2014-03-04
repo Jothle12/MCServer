@@ -18,6 +18,8 @@ public:
 
 	cPiston(cWorld * a_World);
 
+
+	/* Moved to cBlockPistonHandler 
 	static NIBBLETYPE RotationPitchToMetaData(double a_Rotation, double a_Pitch)
 	{
 		if (a_Pitch >= 50)
@@ -54,7 +56,9 @@ public:
 			}
 		}
 	}
+	*/
 	
+	/* Moved to cBlockPistonHandler
 	static eBlockFace MetaDataToDirection(NIBBLETYPE a_MetaData)
 	{
 		switch (a_MetaData)
@@ -73,7 +77,9 @@ public:
 			}
 		}
 	}
+	*/
 
+	/* All moved(?)
 	void ExtendPiston( int, int, int );
 	void RetractPiston( int, int, int );
 	
@@ -91,10 +97,12 @@ public:
 	
 	/// Returns true if the specified block can be pulled by a sticky piston
 	static bool CanPull(BLOCKTYPE a_BlockType, NIBBLETYPE a_BlockMeta);
-	
+	*/
+
+	/* Already exists(?)
 	/// Updates the coords by the specified amount in the direction a piston of the specified meta is facing
 	static void AddDir(int & a_BlockX, int & a_BlockY, int & a_BlockZ, NIBBLETYPE a_PistonMeta, int a_Amount);
-	
+	*/
 	
 	cWorld * m_World;
 
